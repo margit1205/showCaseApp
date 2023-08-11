@@ -15,7 +15,7 @@ const InsuranceCard = () => {
               <span className="icon">
                 <img src="img/Group 427320731.svg"></img>
               </span>
-              <a className="card-head-link"href="https://turbomobiles.onwavemaker.com/#/Home"><h3>Loan Corp</h3></a>
+              <a className="card-head-link"href="#"><h3>Loan Corp</h3></a>
             </div>
             <p>
               Loan corp is a loan processing system that automates the work flow
