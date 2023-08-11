@@ -1,0 +1,156 @@
+
+.banner{
+    padding: 6.5em 1em 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.banner-bg{
+   position: absolute;
+   top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.banner-bg::after{
+  position: absolute;
+  right: 130px;
+  content: "";
+  width: 751px;
+  height: 100%;
+  background-color: #e9ddff;
+  filter: blur(150px);
+  border-radius: 50%;
+  z-index: -1;
+}
+.banner-bg::before{
+  position: absolute;
+  left: 160px;
+  content: "";
+  width: 496px;
+  height: 100%;
+  background-color: #d6efff;;
+  filter: blur(150px);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+
+.star{
+  position: absolute;
+  left: 18px;
+  top:120px;
+  width: 38px;
+
+}
+.img-frame{
+  position: absolute;
+  left: 18px;
+  top: 240px;
+  width: 180px;
+}
+
+.smiling{
+  position: absolute;
+  right: 0;
+  top: 119px;
+  width: 100px;
+}
+
+.scale{
+  position: absolute;
+  right: 0;
+  top:240px;
+  width: 152px;
+}
+.banner-content{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.banner-content p{
+  font-size: var(--f-h5);
+}
+.moments{
+font-family: La Belle Aurore;
+font-size: 140px;
+font-weight: 400;
+margin-left: 18px; 
+letter-spacing: -5px;
+color: #5544FE;
+
+}
+.banner-title{
+  font-size: var(--f-title);
+  font-family: Inter;
+}
+
+/* media query */
+
+
+@media screen and (max-width: 996px) {
+  .moments{
+    font-size: 50px;
+  }
+  .banner-title{
+    font-size: 30px;
+  }
+.unique-tabs{
+    width: 300px;
+    overflow: scroll;
+  }
+  .social-icon{
+    justify-content: space-evenly;
+  }
+  .img-frame {
+    position: absolute;
+    left: 0;
+    top: 238px;
+    width: 80px;
+}
+
+.star {
+    position: absolute;
+    left: 18px;
+    top: 92px;
+    width: 20px;
+}
+.smiling {
+    position: absolute;
+    right: 0;
+    top: 148px;
+    width: 60px;
+}
+
+.scale {
+    position: absolute;
+    right: 0;
+    top: 219px;
+    width: 90px;
+}
+.footer-logo{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+  footer{
+    padding: 0;
+  }
+}
+@media screen and  (min-width:996px){
+  .unique-tabs{
+    width:540px;
+  }
+  footer{
+    padding: 5em 3em 1em !important;
+  }
+  .footer-logo img{
+    margin-top: -10px;
+  }
+  .footer__links {
+    padding-bottom: 30px;
+    box-shadow: 0 0.2px 0 0 rgba(0,0,0,.2);
+  }
+}
