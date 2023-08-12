@@ -5,9 +5,8 @@ title: Bright Bank
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 import { Carousel } from 'react-responsive-carousel';
+import clsx from "clsx";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-
-
 import ParagraphGenerator from "../components/content";
 
 
@@ -17,14 +16,16 @@ import ParagraphGenerator from "../components/content";
 export const ImageCarousel = () => 
    (
     <Carousel>
-      <div>
-       <img  className="d-block w-100" src="img/caro-1.svg" alt="Image 1" />
+      <div className="d-flex">
+       <img   src="img/caro-1.svg" alt="Image 1" />
+       <img    src="img/caro-2.svg" alt="Image 2" />
+       <img  src="img/caro-3.png" alt="Image 3" />
       </div>
-      <div>
-       <img   className="d-block w-100" src="img/caro-2.svg" alt="Image 2" />
+       <div className="d-flex">
+      <img  src="img/brightbankmy1.png" alt="Image 4" />
       </div>
-      <div>
-      <img  className="d-block w-100"src="img/caro-3.png" alt="Image 3" />
+       <div className="d-flex">
+      <img  src="img/brightbankcard.png" alt="Image 5" />
       </div>
     </Carousel>
   );
@@ -70,9 +71,10 @@ export const RightTab = () => (
 <div class="row">
 <div class="col col--9 left-content ">
   <div class="About-section spacing-top">
-    <span>
+   <a href="/"> <span>
     <i class=" icon-back fas fa-arrow-left"></i> Back
     </span>
+    </a>
         <h1>Bright Bank</h1>
         <ImageCarousel />
     <div class="inline-head spacing-top">
@@ -152,14 +154,6 @@ export const RightTab = () => (
   <h2>Integrations</h2>
   <div class="integration-container spacing-content">
   <div class="integration-content ">
-   <h5><i class="fas fa-icons"></i>Wizard</h5>
-   <p>Sed nunc neque, tempus ac dolor et, dignissim fringilla mi. Suspendisse in orci porttitor lorem interdum</p>
-  </div>
-  <div class="integration-content">
-   <h5><i class="fas fa-icons"></i>Wizard</h5>
-   <p>Sed nunc neque, tempus ac dolor et, dignissim fringilla mi. Suspendisse in orci porttitor lorem interdum</p>
-  </div>
-  <div class="integration-content">
    <h5><i class="fas fa-icons"></i>Wizard</h5>
    <p>Sed nunc neque, tempus ac dolor et, dignissim fringilla mi. Suspendisse in orci porttitor lorem interdum</p>
   </div>

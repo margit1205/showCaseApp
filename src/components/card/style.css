@@ -1,6 +1,7 @@
 
 .card{
-    width: 360px;
+    width: 380px;
+    height: 500px;
 }
 .card-img{
 display: inline-flex;

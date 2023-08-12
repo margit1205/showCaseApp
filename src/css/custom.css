@@ -334,7 +334,7 @@ h5 i {
   flex-direction: column;
 }
 .aside-right h4{
-  margin-left: 17px;
+  margin-left: 44px;
 }
 .aside-right a {
   text-decoration: underline;
@@ -355,7 +355,7 @@ h5 i {
 
 .right-tabs {
   width: 280px;
-  height: 50px;
+  /* height: 50px; */
   border-radius: 10px;
   border: 1px solid rgba(54, 53, 84, 0.08);
   background: #fff;
@@ -363,6 +363,7 @@ h5 i {
   align-items: center;
   justify-content: space-between;
   padding: 6px;
+  margin-right: 10px;
 }
 .right-tabs .tabs__item {
     width: 48%;
@@ -379,16 +380,13 @@ h5 i {
   flex-direction: column;
 }
 .carousel .slide {
-  min-width: 360px !important;
   margin: 10px !important;
-  height: 260px;
-  position: relative;
   text-align: center;
   overflow: hidden;
 }
 .carousel .slide img {
-  width: 360px;
   height: 260px;
+  object-fit: contain;
 }
 
 .control-dots{
@@ -397,9 +395,17 @@ h5 i {
 .thumbs-wrapper{
   display: none;
 }
+.d-flex{
+  display: flex;
+  gap: 10px;
+}
 @media screen and (min-width: 996px) {
   .carousel-img {
     display: flex;
     gap: 10px;
   }
+}
+@media (min-width: 1440px){}
+.container {
+    max-width: var(--width-100) !important;
 }

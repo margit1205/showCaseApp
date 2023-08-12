@@ -7,7 +7,7 @@ const RetailCard = () => {
       <div className="card-body">
         <div className="Retail-card ">
         <div className="card-img">
-        <a href="#">
+        <a href="TurboMobiles">
             <img src="img/Turbo.svg"></img>
             </a>
           </div>
